@@ -1,11 +1,4 @@
-## Table of Contents
-
-
-
-```markdown
-# Kubernetes Development Project
-
-This project involves setting up a Kubernetes cluster using Kind, deploying a Node.js app, Dockerizing it, and more.
+# Kubernetes In Docker Development Project
 
 ## Tasks
 
