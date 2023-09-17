@@ -1,9 +1,9 @@
 node_modules
 kube.yaml
 
-.terraform.lock.hcl
-terraform.tfstate
-terraform.tfstate.backup
+# terraform files
+*.tfvars
+*.tfstate.backup
+*.tfstate
+*.terraform.*
 .terraform/
-.terraform.lock.hcl
-.terraform.tfstate.d/
