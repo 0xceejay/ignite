@@ -50,6 +50,8 @@ To run the `kind.sh` script
    chmod +x kind.sh
    ./kind.sh
    ```
+![](images/kind.png)
+
 ### Task 2: Dockerize and Deploy Hello World Express
 ```bash
    cd app
@@ -57,13 +59,18 @@ To run the `kind.sh` script
    docker tag app {YOUR_DOCKER_USERNAME}/app:app
    docker push {YOUR_DOCKER_USERNAME}/app:app
    ```
+![](images/docker.png)
 ### Task 3: Create a Kubernetes Deployment Manifest
+[Deployment Manifest](https://github.com/0xceejay/ignite/blob/main/k8s/deployment.yaml)
 ### Task 4: Deploy Kubernetes Manifest with Terraform
 ```bash
    cd terraform
    terraform init
    terraform apply --auto-approve
    ```
+![](images/terraform.png)
+![](images/terraform1.png)
+
 ### Bonus Task: Set Up Monitoring with Kube-Prometheus Stack
 ```bash
    cd ..
@@ -71,3 +78,20 @@ To run the `kind.sh` script
    terraform init
    terraform apply --auto-approve
    ```
+![](images/prometheus.png)
+![](images/prometheus1.png)
+
+```bash
+kubectl port-forward svc/prometheus-community-kube-prometheus 9090:9090 -n default
+   ```
+![](images/portforwarding.png)
+
+go to [http://localhost:9090/](http://localhost:9090/)
+![](images/dashboard.png)
+![](images/dashboard1.png)
+
+### TO DELETE ALL
+```bash
+  kind delete cluster --name ignite
+   ```
+![](images/delete.png)
