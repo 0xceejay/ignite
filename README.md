@@ -25,3 +25,49 @@
 ### Bonus Task: Set Up Monitoring with Kube-Prometheus Stack
 
 1. Use the Terraform Helm provider to set up monitoring and observability with the Kube-Prometheus stack.
+
+
+## Procedures
+
+### Getting Started
+
+To get started with this project, follow these steps:
+
+#### Clone the Repository
+
+1. Open your terminal.
+
+2. Use the `git clone` command to clone the repository to your local machine. 
+
+   ```bash
+   git clone https://github.com/0xceejay/ignite
+   cd ignite
+### Task 1: Setting Up a Kubernetes Cluster with Kind
+
+To run the `kind.sh` script 
+
+   ```bash
+   chmod +x kind.sh
+   ./kind.sh
+   ```
+### Task 2: Dockerize and Deploy Hello World Express
+```bash
+   cd app
+   docker build -t app .
+   docker tag app {YOUR_DOCKER_USERNAME}/app:app
+   docker push {YOUR_DOCKER_USERNAME}/app:app
+   ```
+### Task 3: Create a Kubernetes Deployment Manifest
+### Task 4: Deploy Kubernetes Manifest with Terraform
+```bash
+   cd terraform
+   terraform init
+   terraform apply --auto-approve
+   ```
+### Bonus Task: Set Up Monitoring with Kube-Prometheus Stack
+```bash
+   cd ..
+   cd prometheus
+   terraform init
+   terraform apply --auto-approve
+   ```
