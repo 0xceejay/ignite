@@ -14,5 +14,5 @@ provider "kubectl" {
 }
 
 resource "kubectl_manifest" "load" {
-  yaml_body = file("~/OneDrive/Documents/code/ignite/deployment.yaml")
+  yaml_body = file("~/OneDrive/Documents/code/ignite/k8s/deployment.yaml")
 }
